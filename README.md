@@ -160,3 +160,9 @@ https://www.informaticar.net/security-hardening-ubuntu-20-04/
 
 How to Install Rkhunter on Ubuntu 20.04:
 https://blog.eldernode.com/install-rkhunter-on-ubuntu/
+
+How to Set Up a Firewall with UFW on Ubuntu 20.04
+https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-ubuntu-20-04/
+
+How To Set Up a Firewall with UFW on Ubuntu 20.04
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-20-04
