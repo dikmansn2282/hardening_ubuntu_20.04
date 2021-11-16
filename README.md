@@ -29,9 +29,10 @@ sudo ufw status
 sudo ufw allow ssh
 
 sudo ufw allow 222
-===============
-change the port
-===============
+
+
+# change the port
+
 
 sudo vim /etc/ssh/sshd_config
 
