@@ -2,39 +2,37 @@
 Security Hardening Ubuntu 20.04
 
 # Patching software
-sudo apt update
-sudo apt upgrade
+- sudo apt update
+- sudo apt upgrade
 
 # Creating New User
-adduser username
+- adduser username
 
 usermod -aG sudo username
-su - username
-sudo whoami
+- su - username
+- sudo whoami
 
-exit
-exit
+- exit
+- exit
 
-ssh username@xxx.xxx.xxx.xxx
+- ssh username@xxx.xxx.xxx.xxx
 
 # Locking root for ssh login
-sudo vim /etc/ssh/sshd_config
+- sudo vim /etc/ssh/sshd_config
 
 PermitRootLogin no
 
-sudo service ssh restart
+- sudo service ssh restart
 
 # Changing SSH port and account lockout policy
-sudo ufw status
-sudo ufw allow ssh
+- sudo ufw status
+- sudo ufw allow ssh
 
-sudo ufw allow 222
-
+- sudo ufw allow 222
 
 # change the port
 
-
-sudo vim /etc/ssh/sshd_config
+- sudo vim /etc/ssh/sshd_config
 
 Now find following lines, uncomment them (remove #) and type in following
 
@@ -43,9 +41,9 @@ Port value will change port from 22 to 222 and MaxAuthTries will lock out IP add
 Port 222
 MaxAuthTries 5
 
-sudo service ssh restart
+- sudo service ssh restart
 
-ssh username@xxx.xxx.xxx.xxx -p 222
+- ssh username@xxx.xxx.xxx.xxx -p 222
 
 # Other SSH settings
 
@@ -53,7 +51,7 @@ We will be going through few more settings in SSH config file, check them out an
 
 So, we will be editing
 
-sudo nano /etc/ssh/sshd_config
+- sudo nano /etc/ssh/sshd_config
 
 # Protocol 2
 
